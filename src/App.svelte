@@ -9,3 +9,13 @@
     <Board />
     <Keyboard />
 </main>
+
+<style>
+    nav {
+        background-color: var(--bg);
+        color: white;
+        font-weight: bold;
+        padding: 15px;
+        text-align: center;
+    }
+</style>
