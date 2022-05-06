@@ -1,6 +1,6 @@
 <script lang="ts">
-    export let x;
-    export let y;
+    export let x: number;
+    export let y: number;
 </script>
 
 <div class="cell">A</div>
