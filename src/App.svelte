@@ -3,7 +3,6 @@
     import Board from "./components/Board.svelte";
 </script>
 
-
 <main>
     <nav>Wordle Clone</nav>
     <Board />
