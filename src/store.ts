@@ -4,11 +4,11 @@ import { writable } from "svelte/store";
 function createGrid() {
     const grid = [];
 
-    for (let col = 0; col < 6; col++) {
+    for (let i = 0; i < 5; i++) {
         grid.push([]);
 
-        for (let row = 0; row < 5; row++) {
-            grid[col][row] = "";
+        for (let x = 0; x < 5; x++) {
+            grid[i][x] = "";
         }
     }
 
