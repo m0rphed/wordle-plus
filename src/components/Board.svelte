@@ -3,7 +3,7 @@
     import Cell from "./Cell.svelte";
 </script>
 
-<div class="game">
+<div class="game-board">
     {#each $board as column, y}
         <div class="row">
             {#each column as row, x}
@@ -12,3 +12,14 @@
         </div>
     {/each}
 </div>
+
+<style>
+    .game-board {
+        margin: 50px auto;
+        width: fit-content;
+    }
+
+    .row {
+        display: flex;
+    }
+</style>
