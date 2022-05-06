@@ -1,9 +1,20 @@
 <script lang="ts">
+    import { board } from "../store";
     export let x: number;
     export let y: number;
+    // '$' - use this reactive statement declaration
+    $: letter = $board[x][y];
+    // update board state
+    board.update((previous) => {
+        const newBoard = previous;
+        newBoard[x][y] = "H";
+        return newBoard;
+    });
 </script>
 
-<div class="cell">A</div>
+<div class="cell">
+    {letter}
+</div>
 
 <style>
     .cell {
