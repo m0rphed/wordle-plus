@@ -7,7 +7,7 @@
     {#each $board as column, y}
         <div class="row">
             {#each column as row, x}
-                <Cell {y} {x} />
+                <Cell y={y} x={x} />
             {/each}
         </div>
     {/each}

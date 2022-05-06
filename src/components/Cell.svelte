@@ -3,11 +3,11 @@
     export let x: number;
     export let y: number;
     // '$' - use this reactive statement declaration
-    $: letter = $board[x][y];
+    $: letter = $board[y][x];
     // update board state
     board.update((previous) => {
         const newBoard = previous;
-        newBoard[x][y] = "H";
+        newBoard[1][1] = "H";
         return newBoard;
     });
 </script>
